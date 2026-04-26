@@ -19,7 +19,7 @@ require (
 	github.com/prometheus/client_golang v1.16.0
 	github.com/prometheus/exporter-toolkit v0.10.0
 	github.com/rs/zerolog v1.28.0
-	github.com/slack-go/slack v0.12.5
+	github.com/slack-go/slack v0.23.0
 	github.com/stretchr/testify v1.11.1
 	google.golang.org/api v0.275.0
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0
