@@ -74,21 +74,21 @@ func (e *EnhancedEvent) GetTimestampISO8601() string {
 }
 
 func (e *EnhancedEvent) GetLastTimestampMs() int64 {
-        timestamp := e.LastTimestamp.Time
-        if timestamp.IsZero() {
-                timestamp = e.EventTime.Time
-        }
+	timestamp := e.LastTimestamp.Time
+	if timestamp.IsZero() {
+		timestamp = e.EventTime.Time
+	}
 
-        return timestamp.UnixNano() / (int64(time.Millisecond) / int64(time.Nanosecond))
+	return timestamp.UnixNano() / (int64(time.Millisecond) / int64(time.Nanosecond))
 }
 
 func (e *EnhancedEvent) GetLastTimestampISO8601() string {
-        timestamp := e.LastTimestamp.Time
-        if timestamp.IsZero() {
-                timestamp = e.EventTime.Time
-        }
+	timestamp := e.LastTimestamp.Time
+	if timestamp.IsZero() {
+		timestamp = e.EventTime.Time
+	}
 
-        layout := "2006-01-02T15:04:05.000Z"
-        return timestamp.Format(layout)
+	layout := "2006-01-02T15:04:05.000Z"
+	return timestamp.Format(layout)
 
 }
