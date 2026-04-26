@@ -75,6 +75,7 @@ receivers:
         endpoint: "localhost2"
         eventType: "kube-event"
         createdAt: "{{ .GetTimestampMs }}"
+        lastSeenAt: "{{ .GetLastTimestampMs }}"
         details:
           message: "{{ .Message }}"
           reason: "{{ .Reason }}"

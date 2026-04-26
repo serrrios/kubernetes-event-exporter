@@ -409,6 +409,7 @@ receivers:
         region: "us-west-2"
         eventType: "kubernetes-event"
         createdAt: "{{ .GetTimestampMs }}"
+        lastSeenAt: "{{ .GetLastTimestampMs }}"
         details:
           message: "{{ .Message }}"
           reason: "{{ .Reason }}"
@@ -421,6 +422,15 @@ receivers:
           host: "{{ .Source.Host }}"
           labels: "{{ toJson .InvolvedObject.Labels}}"
 ```
+
+Timestamp helpers available in templates:
+
+| Helper | Description |
+| --- | --- |
+| `{{ .GetTimestampMs }}` | Event first timestamp in Unix milliseconds. Falls back to `eventTime` when `firstTimestamp` is empty. |
+| `{{ .GetTimestampISO8601 }}` | Event first timestamp formatted as ISO-8601 UTC string. Falls back to `eventTime` when `firstTimestamp` is empty. |
+| `{{ .GetLastTimestampMs }}` | Event last timestamp in Unix milliseconds. Falls back to `eventTime` when `lastTimestamp` is empty. |
+| `{{ .GetLastTimestampISO8601 }}` | Event last timestamp formatted as ISO-8601 UTC string. Falls back to `eventTime` when `lastTimestamp` is empty. |
 
 ### Pubsub
 
