@@ -3,6 +3,11 @@
 > **Note**: This is an active fork of [Opsgenie Kubernetes Event Exporter](https://github.com/opsgenie/kubernetes-event-exporter)
 since that is not maintained since November 2021. Development is sponsored by [Resmo](https://www.resmo.com).
 
+> **Repository note**: This repository was re-uploaded from
+[resmoio/kubernetes-event-exporter](https://github.com/resmoio/kubernetes-event-exporter).
+The exact original version or commit is unknown, so this copy should be treated as a preserved re-upload with local
+maintenance changes.
+
 > This tool is presented at [KubeCon 2019 San Diego](https://kccncna19.sched.com/event/6aa61eca397e4ff2bdbb2845e5aebb81).
 
 This tool allows exporting the often missed Kubernetes events to various outputs so that they can be used for
