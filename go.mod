@@ -5,7 +5,7 @@ go 1.26
 toolchain go1.26.2
 
 require (
-	cloud.google.com/go/bigquery v1.76.0
+	cloud.google.com/go/bigquery v1.77.0
 	cloud.google.com/go/pubsub v1.50.2
 	github.com/Masterminds/sprig/v3 v3.2.3
 	github.com/Shopify/sarama v1.37.2
