@@ -126,7 +126,7 @@ require (
 	github.com/sirupsen/logrus v1.9.4 // indirect
 	github.com/spf13/cast v1.3.1 // indirect
 	github.com/spf13/pflag v1.0.10 // indirect
-	github.com/xdg-go/scram v1.1.2
+	github.com/xdg-go/scram v1.2.0
 	go.opencensus.io v0.24.0 // indirect
 	golang.org/x/crypto v0.50.0 // indirect
 	golang.org/x/net v0.53.0 // indirect
